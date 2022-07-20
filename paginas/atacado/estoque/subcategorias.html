@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../../js/atacado/estoque/subcategorias.js"></script>
+    </head>
+    <style>
+         table, th, td{
+  border:1px solid black;
+  }
+  th {
+    background-color: #480f67;
+	}
+	tr {background-color: #edf5f7;}
+    </style>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="ddlCAT">Categorias</label>
+                        <select id="ddlCAT" name="ddlCAT">
+                            <option value="0">Escolha uma Categoria</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <table id="tblSubcategorias">
+            <thead>
+                <tr>
+                    <th style="Color: white">ID</th>
+                    <th style="Color: white">Descricao</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>

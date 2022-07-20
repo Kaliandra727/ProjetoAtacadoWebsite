@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../../js/atacado/estoque/produtos.js"></script>
+    </head>
+    <style>
+        table, th, td{
+  border:1px solid black;
+  }
+  th {
+    background-color: #303e56;
+	}
+	tr {background-color: #9dacc5;}
+    </style>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <label for="ddlCAT">Categorias</label>
+                        <select id="ddlCAT" name="ddlCAT">
+                            <option value="0">Escolha uma Categoria</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="ddlSUB">Subcategorias</label>
+                        <select id="ddlSUB" name="ddlSUB">
+                            <option value="0">Escolha uma Subcategoria</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <table id="tblProdutos">
+            <thead>
+                <tr>
+                    <th style="color:white ;">ID</th>
+                    <th style="color:white ;">Descricao</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+</html>
