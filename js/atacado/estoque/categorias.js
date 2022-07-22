@@ -1,7 +1,7 @@
 $(document).ready( function(){
     CarregarCategorias()
 
-    $('#btnINCLUSAO').click(function (){
+    $('#btnINCLUSAO').click(function () {
         localStorage.setItem('opercat','1');
         window.location = 'admincategorias.html';
     });
