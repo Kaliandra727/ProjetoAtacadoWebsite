@@ -5,34 +5,41 @@
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../../../js/atacado/estoque/categorias.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     </head>
-    <style>
-        table, th, td{
-  border:1px solid black;
-  }
-  th {
-    background-color: #303e56;
-	}
-	tr:hover {background-color: #9dacc5;}
-    </style>
     <body>
-        <h1>Categorias</h1>
-    <br />
-    <div>
-        <button id="btnINCLUSAO">Incluir Categoria</button>
-    </div>
-    <br />
-    <table id="tblCategorias">
-        <thead>
-            <tr>
-                <th style="color:white ;">ID</th>
-                <th style="color:white ;">Descricao</th>
-                <th style="color:white ;">Situacao</th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+        <div class="container-fluid bg-secondary">
+            <div class="jumbotron bg-dark text-white">
+                <h1>Categorias</h1>
+            </div>
+            <br />
+            <div>
+                <button id="btnINCLUSAO">Incluir Categoria</button>
+            </div>
+            <br />
+            <div>
+                <table class="table table-bordered table-sm table-dark" id="tblCategorias" >
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descricao</th>
+                            <th>Situacao</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>        
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="http://cms.psgtecnologia.com.br/uploads/logo_psg_branca_fb6edd3b65.svg" class="float-left" width="250" height="250">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
