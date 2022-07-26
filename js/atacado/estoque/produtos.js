@@ -8,7 +8,7 @@ $('#ddlCAT').change(function() {
     CarregarSubcategorias(idsubs);
 });
 
-$('#ddlSUB').change(function(){
+$('#ddlSUB').change(function() {
     $('#tblProdutos tbody').empty();
     var idpro = $('#ddlSUB option:selected').val();
     CarregarProdutos(idpro);
@@ -25,13 +25,13 @@ $.get(urlServico, function (retorno, status) {
         var categoria = retorno[i];
         var id = categoria.codigo;
         var descricao = categoria.descricao;
-        var situacao = categoria.situacao;
+        //var situacao = categoria.situacao;
 
-        var linhaINI = "<tr>";
-        var colunaID = "<td>" + id + "</td>";
-        var colunaDESC = "<td>" + descricao + "</td>";
-        var colunaSIT = "<td>" + situacao + "</td>";
-        var linhaFIM = "</tr>";
+        // var linhaINI = "<tr>";
+        // var colunaID = "<td>" + id + "</td>";
+        // var colunaDESC = "<td>" + descricao + "</td>";
+        // var colunaSIT = "<td>" + situacao + "</td>";
+        // var linhaFIM = "</tr>";
 
         var opcao = '<option value="' + id + '">' + descricao + '</option>';
         $("#ddlCAT").append(opcao);
@@ -47,15 +47,15 @@ if(keys.length == 0){
     alert("Erro ao obter dados!");
     return;
 }
-else {
+ else {
     for (var i = 0; i < keys.length; i++) {
     var subcategorias = retorno[i];
     var idsub = subcategorias.idSubcategoria;
     var descricao = subcategorias.descricaoSubcategoria;
 
-    var linhaINI = "<tr>";
-    var colunaDES = "<td>" + descricao + "</td>";
-    var linhaFIM = "</tr>";
+    // var linhaINI = "<tr>";
+    // var colunaDES = "<td>" + descricao + "</td>";
+    // var linhaFIM = "</tr>";
 
     var opcao = '<option value="' + idsub + '">' + descricao + '</option>';
     $('#ddlSUB').append(opcao);
